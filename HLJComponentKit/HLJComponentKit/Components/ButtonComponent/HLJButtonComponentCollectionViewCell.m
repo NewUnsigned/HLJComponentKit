@@ -33,14 +33,14 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.contentView.frame = UIEdgeInsetsInsetRect(self.bounds, _viewModel.marginInsets);
-    _button.frame = UIEdgeInsetsInsetRect(self.contentView.bounds, _viewModel.paddingInsets);
+    self.contentView.frame = UIEdgeInsetsInsetRect(self.bounds, _viewModel.style.marginInsets);
+    _button.frame = UIEdgeInsetsInsetRect(self.contentView.bounds, _viewModel.style.paddingInsets);
 }
 
 - (void)setViewModel:(HLJButtonComponentViewModel *)viewModel {
     _viewModel = viewModel;
     
-    [viewModel setupPropertiesForView:_button];
+    [viewModel.style setupPropertiesForView:_button];
     
     [_button setTitle:viewModel.title forState:UIControlStateNormal];
 }

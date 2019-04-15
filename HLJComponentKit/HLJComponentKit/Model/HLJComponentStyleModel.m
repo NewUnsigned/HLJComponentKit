@@ -1,26 +1,22 @@
 //
-//  HLJViewComponentViewModel.m
-//  MeiJiaShi
+//  HLJComponentStyleModel.m
+//  HLJComponentKit
 //
-//  Created by bimuyu on 2019/3/29.
-//  Copyright © 2019 bimuyu. All rights reserved.
+//  Created by bimuyu on 2019/4/15.
+//  Copyright © 2019 helijia. All rights reserved.
 //
 
-#import "HLJViewComponentViewModel.h"
+#import "HLJComponentStyleModel.h"
 #import "UIColor+Extension.h"
 #import "NSArray+SafeOperate.h"
 
-@implementation HLJViewComponentViewModel
+@implementation HLJComponentStyleModel
 
 - (instancetype)init {
     if (self = [super init]) {
         _backgroundColor = [UIColor whiteColor];
     }
     return self;
-}
-
-- (Class<HLJComponentViewProtocol>)viewClass {
-    return nil;
 }
 
 - (void)setMargin:(NSArray *)margin {
@@ -40,8 +36,6 @@
                                       [[_margin safeObjectAtIndex:2] floatValue],
                                       [[_margin safeObjectAtIndex:3] floatValue]);
 }
-
-@synthesize viewHeight;
 
 - (void)setupPropertiesForView:(UIView *)view {
     view.backgroundColor = _backgroundColor;

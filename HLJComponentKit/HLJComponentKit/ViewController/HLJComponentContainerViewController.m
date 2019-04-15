@@ -69,6 +69,10 @@
     [self.view addSubview:_collectionView];
 }
 
+- (void)registerAllBasicComponents {
+
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     _collectionView.frame = self.view.bounds;

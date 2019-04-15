@@ -19,8 +19,9 @@
     [super viewDidLoad];
     
     [self registComponentClass:HLJTestSectionController.class componentName:@"test"];
-    
+
     HLJComponentModel *component = [HLJComponentModel componentWithName:@"test"];
+    
     [self.sectionModels addObject:component];
     
     [self reloadContainer];

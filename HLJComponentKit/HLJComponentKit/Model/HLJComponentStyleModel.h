@@ -1,23 +1,16 @@
 //
-//  HLJViewComponentViewModel.h
-//  MeiJiaShi
+//  HLJComponentStyleModel.h
+//  HLJComponentKit
 //
-//  Created by bimuyu on 2019/3/29.
-//  Copyright © 2019 bimuyu. All rights reserved.
+//  Created by bimuyu on 2019/4/15.
+//  Copyright © 2019 helijia. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HLJComponentProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 基础的view组件，其子类可设置view
- */
-@interface HLJViewComponentViewModel : NSObject <HLJComponentViewModelProtocol>
-
-// MARK: HLJComponentViewModelProtocol
+@interface HLJComponentStyleModel : NSObject
 
 /**
  view距离组件的边距(外边距),top left bottom right,可以是NSNumber,NSString
@@ -30,11 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSArray *padding;
 @property (nonatomic, assign) UIEdgeInsets paddingInsets;
-
-/**
- 组件高度
- */
-@property (nonatomic, strong) NSNumber *viewHeight;
 
 // MARK: View
 
@@ -84,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  设置viewModel所有属性给view
-
+ 
  @param view 视图
  */
 - (void)setupPropertiesForView:(UIView *)view;

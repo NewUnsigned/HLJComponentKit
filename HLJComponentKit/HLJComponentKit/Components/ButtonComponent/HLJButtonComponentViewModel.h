@@ -6,13 +6,17 @@
 //  Copyright © 2019 helijia. All rights reserved.
 //
 
-#import "HLJViewComponentViewModel.h"
+#import <Foundation/Foundation.h>
+#import "HLJComponentStyleModel.h"
+#import "HLJComponentProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HLJButtonComponentViewModel : HLJViewComponentViewModel
+@interface HLJButtonComponentViewModel : NSObject <HLJComponentViewModelProtocol>
 
 @property (nonatomic, copy) NSString *title;
+
+@property (nonatomic, strong) HLJComponentStyleModel *style;
 
 @end
 

@@ -12,18 +12,21 @@
 @implementation HLJTestSectionController
 
 - (void)didUpdateToObject:(id)object {
+    
+    HLJComponentStyleModel *style = [HLJComponentStyleModel new];
+    
     HLJButtonComponentViewModel *button = [[HLJButtonComponentViewModel alloc] init];
-    button.margin = @[@10, @10, @10, @10];
-    button.padding = @[@10, @10, @10, @10];
-    button.cornerRadius = 4.0;
-    button.backgroundColor = [UIColor orangeColor];
-    button.tintColor = @"#000000";
+    button.style = style;
+    button.style.margin = @[@10, @10, @10, @10];
+    button.style.padding = @[@10, @10, @10, @10];
+    button.style.cornerRadius = 4.0;
+    button.style.backgroundColor = [UIColor orangeColor];
+    button.style.tintColor = @"#000000";
     button.title = @"这是一个button";
     [self.components addObject:button];
     
     HLJButtonComponentViewModel *button1 = [[HLJButtonComponentViewModel alloc] init];
-    button1.margin = @[@10, @10, @10, @10];
-    button1.padding = @[@10, @10, @10, @10];
+    button1.style = style;
     [self.components addObject:button1];;
 }
 
