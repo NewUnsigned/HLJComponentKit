@@ -18,4 +18,6 @@
     return NSClassFromString(@"HLJButtonComponentCollectionViewCell");
 }
 
+@synthesize viewHeight;
+
 @end

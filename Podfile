@@ -6,7 +6,7 @@ target 'HLJComponentKit' do
   # use_frameworks!
 
   pod 'IGListKit', '~> 3.0'
-
+  
   # Pods for HLJComponentKit
 
 end

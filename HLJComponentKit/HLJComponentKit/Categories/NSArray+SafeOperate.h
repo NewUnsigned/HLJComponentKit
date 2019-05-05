@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (SafeOperate)
 
-- (nullable id)safeObjectAtIndex:(NSInteger)index;
+- (nullable id)safeObjectAtIndex:(NSUInteger)index;
 
 @end
 
