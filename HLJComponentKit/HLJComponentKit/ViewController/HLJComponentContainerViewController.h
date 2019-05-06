@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJComponentContainerViewController : UIViewController <IGListAdapterDataSource>
 
+@property (strong, readonly, nonatomic) IGListAdapter *adatpter;
+
+@property (strong, readonly, nonatomic) UICollectionView *collectionView;
+
 - (instancetype)initWithLayout:(UICollectionViewLayout *)layout;
 
 - (void)registComponentClass:(Class)componentClass componentName:(NSString *)componentName;

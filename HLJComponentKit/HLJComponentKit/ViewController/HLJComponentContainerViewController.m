@@ -10,10 +10,6 @@
 
 @interface HLJComponentContainerViewController ()
 
-@property (strong, readonly, nonatomic) IGListAdapter *adatpter;
-
-@property (strong, readonly, nonatomic) UICollectionView *collectionView;
-
 @property (nonatomic, strong) NSMutableDictionary <NSString *, Class> *componentTypeMap;
 
 @end

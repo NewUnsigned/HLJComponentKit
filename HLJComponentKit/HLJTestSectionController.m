@@ -7,27 +7,36 @@
 //
 
 #import "HLJTestSectionController.h"
-#import "HLJButtonComponentViewModel.h"
+#import "HLJButtonComponent.h"
+#import "HLJLabelComponent.h"
 
 @implementation HLJTestSectionController
 
-- (void)didUpdateToObject:(id)object {
-    
-    HLJComponentStyleModel *style = [HLJComponentStyleModel new];
-    
-    HLJButtonComponentViewModel *button = [[HLJButtonComponentViewModel alloc] init];
-    button.style = style;
-    button.style.margin = @[@10, @10, @10, @10];
-    button.style.padding = @[@10, @10, @10, @10];
-    button.style.cornerRadius = 4.0;
-    button.style.backgroundColor = [UIColor orangeColor];
-    button.style.tintColor = @"#000000";
+- (void)didUpdateToObject:(HLJComponentModel *)object {
+    self.inset = object.inset;
+//    HLJComponentStyleModel *style = [HLJComponentStyleModel new];
+
+    HLJButtonComponent *button = [[HLJButtonComponent alloc] init];
+//    button.style = style;
+//    button.style.margin = @[@10, @10, @10, @10];
+//    button.style.padding = @[@10, @10, @10, @10];
+//    button.style.cornerRadius = 4.0;
+//    button.style.backgroundColor = [UIColor orangeColor];
+//    button.style.tintColor = @"#000000";
     button.title = @"这是一个button";
     [self.components addObject:button];
     
-    HLJButtonComponentViewModel *button1 = [[HLJButtonComponentViewModel alloc] init];
-    button1.style = style;
-    [self.components addObject:button1];;
+    HLJButtonComponent *button1 = [[HLJButtonComponent alloc] init];
+    button1.title = @"这是第二个button";
+    [self.components addObject:button1];
+    
+    HLJLabelComponent *label = [[HLJLabelComponent alloc] init];
+    label.text = @"这是第二个button";
+    [self.components addObject:label];
+    
+    HLJLabelComponent *label1 = [[HLJLabelComponent alloc] init];
+    label1.text = @"这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button这是第二个button";
+    [self.components addObject:label1];
 }
 
 @end

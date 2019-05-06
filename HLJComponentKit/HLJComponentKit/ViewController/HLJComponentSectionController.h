@@ -12,6 +12,6 @@
 
 @interface HLJComponentSectionController : IGListSectionController <HLJComponentViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray <HLJComponentViewModelProtocol> *components;
+@property (nonatomic, strong) NSMutableArray <HLJComponentProtocol> *components;
 
 @end

@@ -8,20 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol HLJComponentViewProtocol;
+@protocol HLJComponentProtocol <NSObject>
 
-@protocol HLJComponentViewModelProtocol <NSObject>
+@property (nonatomic, strong, readonly) UIView *renderContent;
 
-@property (nonatomic, strong, readwrite) NSNumber *viewHeight;
+- (void)renderInContent:(UIView *)content;
 
-/**
- component class, implementation HLJComponentViewProtocol
+- (CGSize)referenceSizeWithContainerSize:(CGSize)size;
 
- @return Class
- */
-- (Class <HLJComponentViewProtocol>)viewClass;
+- (BOOL)shouldContentUpdateWithNext:(id<HLJComponentProtocol>)next;
+
+- (BOOL)shouldRenderWithNext:(id<HLJComponentProtocol>)next content:(UIView *)content;
+
+- (void)contentWillDisplayWithContent:(UIView *)content;
+
+- (void)contentDidEndDisplayWithContent:(UIView *)content;
 
 @optional;
+
+@property (nonatomic, copy) NSString *reuseIdentifier;
 
 /**
  view距离组件的边距(外边距),top left bottom right,可以是NSNumber,NSString
@@ -54,7 +59,7 @@
  @param component 组件
  @param openUrl 跳转url
  */
-- (void)component:(id<HLJComponentViewModelProtocol>)component fetchControllerWithOpenUrl:(NSString *)openUrl;
+- (void)component:(id<HLJComponentProtocol>)component fetchControllerWithOpenUrl:(NSString *)openUrl;
 
 /**
  组件跳转到目的模块
@@ -62,15 +67,18 @@
  @param component 组件
  @param parameters 跳转需要的参数
  */
-- (void)component:(id<HLJComponentViewModelProtocol>)component fetchControllerWithParameters:(NSDictionary *)parameters;
+- (void)component:(id<HLJComponentProtocol>)component fetchControllerWithParameters:(NSDictionary *)parameters;
 
 @end
 
-@protocol HLJComponentViewProtocol <NSObject>
+@protocol HLJComponentContainerProtocol <NSObject>
 
-@optional;
-+ (NSNumber *)viewHeightWithViewModel:(id<HLJComponentViewModelProtocol>)viewModel;
-- (void)setViewModel:(id<HLJComponentViewModelProtocol>)viewModel;
-- (void)setDelegate:(id<HLJComponentViewDelegate>)delegate;
+@property (nonatomic, strong, readonly) UIView *renderedContent;
+@property (nonatomic, strong, readonly) id<HLJComponentProtocol> renderedComponent;
+@property (nonatomic, strong, readonly) UIView *containerView;
+
+- (void)renderComponent:(id<HLJComponentProtocol>)component;
+- (void)didRenderContent:(UIView *)content;
+- (void)didRenderComponent:(id<HLJComponentProtocol>)component;
 
 @end

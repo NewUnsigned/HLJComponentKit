@@ -1,8 +1,8 @@
 //
-//  HLJButtonComponentCollectionViewCell.h
+//  HLJBasicComponent.h
 //  HLJComponentKit
 //
-//  Created by bimuyu on 2019/4/15.
+//  Created by bimuyu on 2019/5/6.
 //  Copyright © 2019 helijia. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HLJButtonComponentCollectionViewCell : UICollectionViewCell <HLJComponentViewProtocol>
+@interface HLJBasicComponent : NSObject <HLJComponentProtocol>
 
 @end
 

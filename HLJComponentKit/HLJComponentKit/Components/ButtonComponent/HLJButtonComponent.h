@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "HLJComponentStyleModel.h"
-#import "HLJComponentProtocol.h"
+#import "HLJBasicComponent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HLJButtonComponentViewModel : NSObject <HLJComponentViewModelProtocol>
+@interface HLJButtonComponent : HLJBasicComponent
+
+@property (nonatomic, strong, readonly) UIButton *button;
 
 @property (nonatomic, copy) NSString *title;
-
-@property (nonatomic, strong) HLJComponentStyleModel *style;
 
 @end
 
