@@ -12,18 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJComponentStyleModel : NSObject
 
-/**
- view距离组件的边距(外边距),top left bottom right,可以是NSNumber,NSString
- */
-@property (nonatomic, strong) NSArray *margin;
-@property (nonatomic, assign) UIEdgeInsets marginInsets;
-
-/**
- view距离容器的边距(内边距),top left bottom right,可以是NSNumber,NSString
- */
-@property (nonatomic, strong) NSArray *padding;
-@property (nonatomic, assign) UIEdgeInsets paddingInsets;
-
 // MARK: View
 
 /**

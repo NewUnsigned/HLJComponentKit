@@ -23,7 +23,9 @@
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
-    return [_components[index] referenceSizeWithContainerSize:[self cellContainerSize]];
+    id<HLJComponentProtocol> component = _components[index];
+    CGSize contentSize = [component contentSizeWithContainerSize:[self cellContainerSizeForComponent:component]];
+    return CGSizeMake(contentSize.width, contentSize.height + component.paddingInsets.top + component.paddingInsets.bottom);
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
@@ -41,8 +43,13 @@
 
 }
 
-- (CGSize)cellContainerSize {
-    return CGSizeMake(self.collectionContext.containerSize.width - self.inset.left - self.inset.right - self.collectionContext.containerInset.left - self.collectionContext.containerInset.right,
+- (CGSize)cellContainerSizeForComponent:(id<HLJComponentProtocol>)component {
+    return CGSizeMake(self.collectionContext.containerSize.width -
+                      self.inset.left - self.inset.right -
+                      self.collectionContext.containerInset.left -
+                      self.collectionContext.containerInset.right -
+                      component.paddingInsets.left -
+                      component.paddingInsets.right,
                       self.collectionContext.containerSize.height);
 }
 

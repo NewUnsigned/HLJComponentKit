@@ -10,33 +10,22 @@
 
 @protocol HLJComponentProtocol <NSObject>
 
-@property (nonatomic, strong, readonly) UIView *renderContent;
-
-- (void)renderInContent:(UIView *)content;
-
-- (CGSize)referenceSizeWithContainerSize:(CGSize)size;
-
-- (BOOL)shouldContentUpdateWithNext:(id<HLJComponentProtocol>)next;
-
-- (BOOL)shouldRenderWithNext:(id<HLJComponentProtocol>)next content:(UIView *)content;
-
-- (void)contentWillDisplayWithContent:(UIView *)content;
-
-- (void)contentDidEndDisplayWithContent:(UIView *)content;
-
-@optional;
-
 @property (nonatomic, copy) NSString *reuseIdentifier;
+
+@property (nonatomic, strong, readonly) UIView *renderContent;
 
 /**
  view距离组件的边距(外边距),top left bottom right,可以是NSNumber,NSString
  */
 @property (nonatomic, strong) NSArray *margin;
+@property (nonatomic, assign) UIEdgeInsets marginInsets;
 
 /**
  view距离容器的边距(内边距),top left bottom right,可以是NSNumber,NSString
  */
 @property (nonatomic, strong) NSArray *padding;
+@property (nonatomic, assign) UIEdgeInsets paddingInsets;
+
 
 /**
  使用openUrl模块跳转
@@ -47,6 +36,18 @@
  使用字典参数进行模块跳转
  */
 @property (strong, nonatomic) NSDictionary *moduleParameters;
+
+- (void)renderInContent:(UIView *)content;
+
+- (CGSize)contentSizeWithContainerSize:(CGSize)size;
+
+- (BOOL)shouldContentUpdateWithNext:(id<HLJComponentProtocol>)next;
+
+- (BOOL)shouldRenderWithNext:(id<HLJComponentProtocol>)next content:(UIView *)content;
+
+- (void)contentWillDisplayWithContent:(UIView *)content;
+
+- (void)contentDidEndDisplayWithContent:(UIView *)content;
 
 @end
 

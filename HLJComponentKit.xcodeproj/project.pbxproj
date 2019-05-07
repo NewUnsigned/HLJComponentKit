@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7503B09A22647FCE004EF823 /* NSArray+SafeOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7503B09922647FCE004EF823 /* NSArray+SafeOperate.m */; };
-		7503B0A62264A951004EF823 /* HLJComponentStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7503B0A52264A951004EF823 /* HLJComponentStyleModel.m */; };
 		7515D5AA2264530300A03B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5A92264530300A03B3C /* AppDelegate.m */; };
 		7515D5AD2264530300A03B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5AC2264530300A03B3C /* ViewController.m */; };
 		7515D5B02264530300A03B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7515D5AE2264530300A03B3C /* Main.storyboard */; };
@@ -16,15 +14,17 @@
 		7515D5B52264530600A03B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7515D5B32264530600A03B3C /* LaunchScreen.storyboard */; };
 		7515D5B82264530600A03B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5B72264530600A03B3C /* main.m */; };
 		7515D5C22264530600A03B3C /* HLJComponentKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5C12264530600A03B3C /* HLJComponentKitUITests.m */; };
-		7515D5D32264557F00A03B3C /* HLJComponentContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5D22264557F00A03B3C /* HLJComponentContainerViewController.m */; };
-		7515D5D6226456ED00A03B3C /* HLJComponentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5D4226456ED00A03B3C /* HLJComponentModel.m */; };
-		7515D5D922645CCA00A03B3C /* HLJComponentSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5D822645CC900A03B3C /* HLJComponentSectionController.m */; };
-		7515D5F0226462D200A03B3C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5EF226462D200A03B3C /* UIColor+Extension.m */; };
-		7515D5F3226464B200A03B3C /* HLJButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5F2226464B200A03B3C /* HLJButtonComponent.m */; };
 		7515D5FC226466F100A03B3C /* HLJTestSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7515D5FB226466F100A03B3C /* HLJTestSectionController.m */; };
-		756D883D228016100019C497 /* HLJComponentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D883C228016100019C497 /* HLJComponentCollectionViewCell.m */; };
-		756D8840228023850019C497 /* HLJBasicComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D883F228023850019C497 /* HLJBasicComponent.m */; };
-		756D8846228024670019C497 /* HLJLabelComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D8845228024670019C497 /* HLJLabelComponent.m */; };
+		75719BE922810ED700702BF3 /* HLJButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BD122810ED700702BF3 /* HLJButtonComponent.m */; };
+		75719BEA22810ED700702BF3 /* HLJLabelComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BD422810ED700702BF3 /* HLJLabelComponent.m */; };
+		75719BEB22810ED700702BF3 /* HLJBasicComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BD622810ED700702BF3 /* HLJBasicComponent.m */; };
+		75719BEC22810ED700702BF3 /* HLJComponentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BD822810ED700702BF3 /* HLJComponentModel.m */; };
+		75719BED22810ED700702BF3 /* HLJComponentStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BDB22810ED700702BF3 /* HLJComponentStyleModel.m */; };
+		75719BEE22810ED700702BF3 /* HLJComponentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BDE22810ED700702BF3 /* HLJComponentCollectionViewCell.m */; };
+		75719BEF22810ED700702BF3 /* HLJComponentContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BE022810ED700702BF3 /* HLJComponentContainerViewController.m */; };
+		75719BF022810ED700702BF3 /* HLJComponentSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BE122810ED700702BF3 /* HLJComponentSectionController.m */; };
+		75719BF122810ED700702BF3 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BE722810ED700702BF3 /* UIColor+Extension.m */; };
+		75719BF222810ED700702BF3 /* NSArray+SafeOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75719BE822810ED700702BF3 /* NSArray+SafeOperate.m */; };
 		B109A0F742EB767DA58DBA97 /* libPods-HLJComponentKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F510CF4E1FA6684CFEE5DFD /* libPods-HLJComponentKit.a */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +42,6 @@
 		20AEA985A8380EC5800D34E8 /* Pods-HLJComponentKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJComponentKit.debug.xcconfig"; path = "Target Support Files/Pods-HLJComponentKit/Pods-HLJComponentKit.debug.xcconfig"; sourceTree = "<group>"; };
 		3F510CF4E1FA6684CFEE5DFD /* libPods-HLJComponentKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLJComponentKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7AB84A7B74DD182905BEEE /* Pods-HLJComponentKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJComponentKit.release.xcconfig"; path = "Target Support Files/Pods-HLJComponentKit/Pods-HLJComponentKit.release.xcconfig"; sourceTree = "<group>"; };
-		7503B09822647FCE004EF823 /* NSArray+SafeOperate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeOperate.h"; sourceTree = "<group>"; };
-		7503B09922647FCE004EF823 /* NSArray+SafeOperate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeOperate.m"; sourceTree = "<group>"; };
-		7503B0A42264A951004EF823 /* HLJComponentStyleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJComponentStyleModel.h; sourceTree = "<group>"; };
-		7503B0A52264A951004EF823 /* HLJComponentStyleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJComponentStyleModel.m; sourceTree = "<group>"; };
 		7515D5A52264530300A03B3C /* HLJComponentKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLJComponentKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7515D5A82264530300A03B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7515D5A92264530300A03B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,25 +55,29 @@
 		7515D5BD2264530600A03B3C /* HLJComponentKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLJComponentKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7515D5C12264530600A03B3C /* HLJComponentKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJComponentKitUITests.m; sourceTree = "<group>"; };
 		7515D5C32264530600A03B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7515D5D12264557F00A03B3C /* HLJComponentContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJComponentContainerViewController.h; sourceTree = "<group>"; };
-		7515D5D22264557F00A03B3C /* HLJComponentContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJComponentContainerViewController.m; sourceTree = "<group>"; };
-		7515D5D4226456ED00A03B3C /* HLJComponentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentModel.m; sourceTree = "<group>"; };
-		7515D5D5226456ED00A03B3C /* HLJComponentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentModel.h; sourceTree = "<group>"; };
-		7515D5D722645CC900A03B3C /* HLJComponentSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentSectionController.h; sourceTree = "<group>"; };
-		7515D5D822645CC900A03B3C /* HLJComponentSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentSectionController.m; sourceTree = "<group>"; };
-		7515D5DA22645FEB00A03B3C /* HLJComponentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJComponentProtocol.h; sourceTree = "<group>"; };
-		7515D5EE226462D100A03B3C /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
-		7515D5EF226462D200A03B3C /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
-		7515D5F1226464B200A03B3C /* HLJButtonComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJButtonComponent.h; sourceTree = "<group>"; };
-		7515D5F2226464B200A03B3C /* HLJButtonComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJButtonComponent.m; sourceTree = "<group>"; };
 		7515D5FA226466F100A03B3C /* HLJTestSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJTestSectionController.h; sourceTree = "<group>"; };
 		7515D5FB226466F100A03B3C /* HLJTestSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJTestSectionController.m; sourceTree = "<group>"; };
-		756D883B228016100019C497 /* HLJComponentCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJComponentCollectionViewCell.h; sourceTree = "<group>"; };
-		756D883C228016100019C497 /* HLJComponentCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJComponentCollectionViewCell.m; sourceTree = "<group>"; };
-		756D883E228023850019C497 /* HLJBasicComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJBasicComponent.h; sourceTree = "<group>"; };
-		756D883F228023850019C497 /* HLJBasicComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJBasicComponent.m; sourceTree = "<group>"; };
-		756D8844228024670019C497 /* HLJLabelComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJLabelComponent.h; sourceTree = "<group>"; };
-		756D8845228024670019C497 /* HLJLabelComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJLabelComponent.m; sourceTree = "<group>"; };
+		75719BCD22810ED700702BF3 /* HLJComponentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentProtocol.h; sourceTree = "<group>"; };
+		75719BCF22810ED700702BF3 /* HLJBasicComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJBasicComponent.h; sourceTree = "<group>"; };
+		75719BD122810ED700702BF3 /* HLJButtonComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJButtonComponent.m; sourceTree = "<group>"; };
+		75719BD222810ED700702BF3 /* HLJButtonComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJButtonComponent.h; sourceTree = "<group>"; };
+		75719BD422810ED700702BF3 /* HLJLabelComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJLabelComponent.m; sourceTree = "<group>"; };
+		75719BD522810ED700702BF3 /* HLJLabelComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJLabelComponent.h; sourceTree = "<group>"; };
+		75719BD622810ED700702BF3 /* HLJBasicComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJBasicComponent.m; sourceTree = "<group>"; };
+		75719BD822810ED700702BF3 /* HLJComponentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentModel.m; sourceTree = "<group>"; };
+		75719BD922810ED700702BF3 /* HLJComponentStyleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentStyleModel.h; sourceTree = "<group>"; };
+		75719BDA22810ED700702BF3 /* HLJComponentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentModel.h; sourceTree = "<group>"; };
+		75719BDB22810ED700702BF3 /* HLJComponentStyleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentStyleModel.m; sourceTree = "<group>"; };
+		75719BDD22810ED700702BF3 /* HLJComponentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentCollectionViewCell.h; sourceTree = "<group>"; };
+		75719BDE22810ED700702BF3 /* HLJComponentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentCollectionViewCell.m; sourceTree = "<group>"; };
+		75719BE022810ED700702BF3 /* HLJComponentContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentContainerViewController.m; sourceTree = "<group>"; };
+		75719BE122810ED700702BF3 /* HLJComponentSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLJComponentSectionController.m; sourceTree = "<group>"; };
+		75719BE222810ED700702BF3 /* HLJComponentContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentContainerViewController.h; sourceTree = "<group>"; };
+		75719BE322810ED700702BF3 /* HLJComponentSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJComponentSectionController.h; sourceTree = "<group>"; };
+		75719BE522810ED700702BF3 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		75719BE622810ED700702BF3 /* NSArray+SafeOperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeOperate.h"; sourceTree = "<group>"; };
+		75719BE722810ED700702BF3 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		75719BE822810ED700702BF3 /* NSArray+SafeOperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeOperate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 		7515D5A72264530300A03B3C /* HLJComponentKit */ = {
 			isa = PBXGroup;
 			children = (
-				7515D5CC2264552B00A03B3C /* HLJComponentKit */,
+				75719BCB22810ED700702BF3 /* HLJComponentKit */,
 				7515D5AB2264530300A03B3C /* ViewController.h */,
 				7515D5AC2264530300A03B3C /* ViewController.m */,
 				7515D5A82264530300A03B3C /* AppDelegate.h */,
@@ -155,136 +155,96 @@
 			path = HLJComponentKitUITests;
 			sourceTree = "<group>";
 		};
-		7515D5CC2264552B00A03B3C /* HLJComponentKit */ = {
+		75719BCB22810ED700702BF3 /* HLJComponentKit */ = {
 			isa = PBXGroup;
 			children = (
-				7515D5ED226462C900A03B3C /* Categories */,
-				7515D5CD2264552B00A03B3C /* Protocol */,
-				7515D5CE2264552B00A03B3C /* Components */,
-				7515D5CF2264552B00A03B3C /* Model */,
-				756D883A228015FD0019C497 /* View */,
-				7515D5D02264552B00A03B3C /* ViewController */,
+				75719BCC22810ED700702BF3 /* Protocol */,
+				75719BCE22810ED700702BF3 /* Components */,
+				75719BD722810ED700702BF3 /* Model */,
+				75719BDC22810ED700702BF3 /* View */,
+				75719BDF22810ED700702BF3 /* ViewController */,
+				75719BE422810ED700702BF3 /* Categories */,
 			);
 			path = HLJComponentKit;
 			sourceTree = "<group>";
 		};
-		7515D5CD2264552B00A03B3C /* Protocol */ = {
+		75719BCC22810ED700702BF3 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				7515D5DA22645FEB00A03B3C /* HLJComponentProtocol.h */,
+				75719BCD22810ED700702BF3 /* HLJComponentProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		7515D5CE2264552B00A03B3C /* Components */ = {
+		75719BCE22810ED700702BF3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				756D883E228023850019C497 /* HLJBasicComponent.h */,
-				756D883F228023850019C497 /* HLJBasicComponent.m */,
-				7515D5E92264613900A03B3C /* ButtonComponent */,
-				7515D5E62264613900A03B3C /* CollectionViewComponent */,
-				7515D5E42264613800A03B3C /* ImageViewComponent */,
-				7515D5E52264613800A03B3C /* LabelComponent */,
-				7515D5E82264613900A03B3C /* TableViewComponent */,
-				7515D5E72264613900A03B3C /* TextFieldComponent */,
-				7515D5E32264613800A03B3C /* TextViewComponent */,
+				75719BCF22810ED700702BF3 /* HLJBasicComponent.h */,
+				75719BD022810ED700702BF3 /* ButtonComponent */,
+				75719BD322810ED700702BF3 /* LabelComponent */,
+				75719BD622810ED700702BF3 /* HLJBasicComponent.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		7515D5CF2264552B00A03B3C /* Model */ = {
+		75719BD022810ED700702BF3 /* ButtonComponent */ = {
 			isa = PBXGroup;
 			children = (
-				7515D5D5226456ED00A03B3C /* HLJComponentModel.h */,
-				7515D5D4226456ED00A03B3C /* HLJComponentModel.m */,
-				7503B0A42264A951004EF823 /* HLJComponentStyleModel.h */,
-				7503B0A52264A951004EF823 /* HLJComponentStyleModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7515D5D02264552B00A03B3C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7515D5D12264557F00A03B3C /* HLJComponentContainerViewController.h */,
-				7515D5D22264557F00A03B3C /* HLJComponentContainerViewController.m */,
-				7515D5D722645CC900A03B3C /* HLJComponentSectionController.h */,
-				7515D5D822645CC900A03B3C /* HLJComponentSectionController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		7515D5E32264613800A03B3C /* TextViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TextViewComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E42264613800A03B3C /* ImageViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ImageViewComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E52264613800A03B3C /* LabelComponent */ = {
-			isa = PBXGroup;
-			children = (
-				756D8844228024670019C497 /* HLJLabelComponent.h */,
-				756D8845228024670019C497 /* HLJLabelComponent.m */,
-			);
-			path = LabelComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E62264613900A03B3C /* CollectionViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CollectionViewComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E72264613900A03B3C /* TextFieldComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TextFieldComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E82264613900A03B3C /* TableViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableViewComponent;
-			sourceTree = "<group>";
-		};
-		7515D5E92264613900A03B3C /* ButtonComponent */ = {
-			isa = PBXGroup;
-			children = (
-				7515D5F1226464B200A03B3C /* HLJButtonComponent.h */,
-				7515D5F2226464B200A03B3C /* HLJButtonComponent.m */,
+				75719BD122810ED700702BF3 /* HLJButtonComponent.m */,
+				75719BD222810ED700702BF3 /* HLJButtonComponent.h */,
 			);
 			path = ButtonComponent;
 			sourceTree = "<group>";
 		};
-		7515D5ED226462C900A03B3C /* Categories */ = {
+		75719BD322810ED700702BF3 /* LabelComponent */ = {
 			isa = PBXGroup;
 			children = (
-				7515D5EE226462D100A03B3C /* UIColor+Extension.h */,
-				7515D5EF226462D200A03B3C /* UIColor+Extension.m */,
-				7503B09822647FCE004EF823 /* NSArray+SafeOperate.h */,
-				7503B09922647FCE004EF823 /* NSArray+SafeOperate.m */,
+				75719BD422810ED700702BF3 /* HLJLabelComponent.m */,
+				75719BD522810ED700702BF3 /* HLJLabelComponent.h */,
 			);
-			path = Categories;
+			path = LabelComponent;
 			sourceTree = "<group>";
 		};
-		756D883A228015FD0019C497 /* View */ = {
+		75719BD722810ED700702BF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				756D883B228016100019C497 /* HLJComponentCollectionViewCell.h */,
-				756D883C228016100019C497 /* HLJComponentCollectionViewCell.m */,
+				75719BD822810ED700702BF3 /* HLJComponentModel.m */,
+				75719BD922810ED700702BF3 /* HLJComponentStyleModel.h */,
+				75719BDA22810ED700702BF3 /* HLJComponentModel.h */,
+				75719BDB22810ED700702BF3 /* HLJComponentStyleModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75719BDC22810ED700702BF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75719BDD22810ED700702BF3 /* HLJComponentCollectionViewCell.h */,
+				75719BDE22810ED700702BF3 /* HLJComponentCollectionViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		75719BDF22810ED700702BF3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75719BE022810ED700702BF3 /* HLJComponentContainerViewController.m */,
+				75719BE122810ED700702BF3 /* HLJComponentSectionController.m */,
+				75719BE222810ED700702BF3 /* HLJComponentContainerViewController.h */,
+				75719BE322810ED700702BF3 /* HLJComponentSectionController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		75719BE422810ED700702BF3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75719BE522810ED700702BF3 /* UIColor+Extension.h */,
+				75719BE622810ED700702BF3 /* NSArray+SafeOperate.h */,
+				75719BE722810ED700702BF3 /* UIColor+Extension.m */,
+				75719BE822810ED700702BF3 /* NSArray+SafeOperate.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		907A1B4FDD5DAF4F53BC8F89 /* Pods */ = {
@@ -422,20 +382,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756D8846228024670019C497 /* HLJLabelComponent.m in Sources */,
-				7503B0A62264A951004EF823 /* HLJComponentStyleModel.m in Sources */,
+				75719BEC22810ED700702BF3 /* HLJComponentModel.m in Sources */,
+				75719BE922810ED700702BF3 /* HLJButtonComponent.m in Sources */,
+				75719BEE22810ED700702BF3 /* HLJComponentCollectionViewCell.m in Sources */,
+				75719BED22810ED700702BF3 /* HLJComponentStyleModel.m in Sources */,
+				75719BEA22810ED700702BF3 /* HLJLabelComponent.m in Sources */,
+				75719BF122810ED700702BF3 /* UIColor+Extension.m in Sources */,
+				75719BEF22810ED700702BF3 /* HLJComponentContainerViewController.m in Sources */,
 				7515D5AD2264530300A03B3C /* ViewController.m in Sources */,
-				756D8840228023850019C497 /* HLJBasicComponent.m in Sources */,
-				756D883D228016100019C497 /* HLJComponentCollectionViewCell.m in Sources */,
-				7503B09A22647FCE004EF823 /* NSArray+SafeOperate.m in Sources */,
 				7515D5B82264530600A03B3C /* main.m in Sources */,
+				75719BF022810ED700702BF3 /* HLJComponentSectionController.m in Sources */,
+				75719BEB22810ED700702BF3 /* HLJBasicComponent.m in Sources */,
 				7515D5FC226466F100A03B3C /* HLJTestSectionController.m in Sources */,
-				7515D5D922645CCA00A03B3C /* HLJComponentSectionController.m in Sources */,
-				7515D5F0226462D200A03B3C /* UIColor+Extension.m in Sources */,
+				75719BF222810ED700702BF3 /* NSArray+SafeOperate.m in Sources */,
 				7515D5AA2264530300A03B3C /* AppDelegate.m in Sources */,
-				7515D5D6226456ED00A03B3C /* HLJComponentModel.m in Sources */,
-				7515D5D32264557F00A03B3C /* HLJComponentContainerViewController.m in Sources */,
-				7515D5F3226464B200A03B3C /* HLJButtonComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

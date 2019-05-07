@@ -27,7 +27,7 @@
     content.backgroundColor = [UIColor randomColor];
 }
 
-- (CGSize)referenceSizeWithContainerSize:(CGSize)size {
+- (CGSize)contentSizeWithContainerSize:(CGSize)size {
     return CGSizeMake(size.width, 44.0);
 }
 

@@ -8,7 +8,6 @@
 
 #import "HLJComponentStyleModel.h"
 #import "UIColor+Extension.h"
-#import "NSArray+SafeOperate.h"
 
 @implementation HLJComponentStyleModel
 
@@ -17,24 +16,6 @@
         _backgroundColor = [UIColor whiteColor];
     }
     return self;
-}
-
-- (void)setMargin:(NSArray *)margin {
-    _margin = margin;
-    
-    _marginInsets = UIEdgeInsetsMake([[_margin safeObjectAtIndex:0] floatValue],
-                                     [[_margin safeObjectAtIndex:1] floatValue],
-                                     [[_margin safeObjectAtIndex:2] floatValue],
-                                     [[_margin safeObjectAtIndex:3] floatValue]);
-}
-
-- (void)setPadding:(NSArray *)padding {
-    _padding = padding;
-    
-    _paddingInsets = UIEdgeInsetsMake([[_margin safeObjectAtIndex:0] floatValue],
-                                      [[_margin safeObjectAtIndex:1] floatValue],
-                                      [[_margin safeObjectAtIndex:2] floatValue],
-                                      [[_margin safeObjectAtIndex:3] floatValue]);
 }
 
 - (void)setupPropertiesForView:(UIView *)view {

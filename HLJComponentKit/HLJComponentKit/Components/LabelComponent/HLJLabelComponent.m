@@ -20,7 +20,7 @@
     return self.content;
 }
 
-- (CGSize)referenceSizeWithContainerSize:(CGSize)size {
+- (CGSize)contentSizeWithContainerSize:(CGSize)size {
     self.content.text = _text;
     return [_content sizeThatFits:size];
 }

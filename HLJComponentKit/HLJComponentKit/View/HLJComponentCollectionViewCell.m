@@ -45,8 +45,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    _renderedContent.frame = self.bounds;
+    _renderedContent.frame = UIEdgeInsetsInsetRect(self.bounds, _renderedComponent.paddingInsets);
 }
 
 - (void)didRenderComponent:(id<HLJComponentProtocol>)component {
